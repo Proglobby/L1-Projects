@@ -23,7 +23,7 @@ start:
 		scanf("%d", &answer);
 		struct Fraction f;
 		switch(answer){
-			case 1: 
+			case 1:{
 				system("cls");
 				printf("Enter the numerator of the number you want to add : ");
 				scanf("%d", &f.numerator);
@@ -37,7 +37,8 @@ start:
 					result.numerator = result.numerator*f.denumerator + a*f.numerator;
 				}
 				break;
-			case 2:
+            }
+			case 2:{
 				system("cls");
 				printf("Enter the numerator of the number you want to substract : ");
 				scanf("%d", &f.numerator);
@@ -51,7 +52,8 @@ start:
 					result.numerator = result.numerator*f.denumerator - a*f.numerator;
 				}
 				break;
-			case 3: 
+            }
+			case 3:{
 				system("cls");
 				printf("Enter the numerator of the number you want to multiply : ");
 				scanf("%d", &f.numerator);
@@ -60,7 +62,8 @@ start:
 				result.numerator = result.numerator * f.numerator;
 				result.denumerator = result.denumerator * result.denumerator;
 				break;
-			case 4:
+            }
+			case 4:{
 				system("cls");
 				printf("Enter the numerator of the number you want to divide : ");
 				scanf("%d", &f.numerator);
@@ -69,7 +72,8 @@ start:
 				result.numerator = result.numerator * f.denumerator;
 				result.denumerator = result.denumerator * f.numerator;
 				break;
-			case 5:
+            }
+			case 5:{
 				system("cls");
 				int n;
 				printf("Enter the power n : ");
@@ -81,8 +85,9 @@ start:
 					result.numerator = result.numerator * a;
 					result.denumerator = result.denumerator * b;
 				}
+            }
 				
-			case 6:
+			case 6:{
 				system("cls");
 				if(result.numerator == result.denumerator){
 					result.numerator = 1;
@@ -110,10 +115,11 @@ start:
 				}
 				
 				break;
-			case 7:
+            }
+			case 7:{
 				goto start;
 				break;
-				
+            }
 				
 		}
 	}while(answer != 8);
