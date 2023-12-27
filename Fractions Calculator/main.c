@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//creating a struct which is the custom type for fraction 
 struct Fraction{
 	int numerator;
 	int denumerator;
@@ -10,7 +9,7 @@ int main(int argc, char *argv[]) {
 	struct Fraction result;
 	
 start:
-	system("cls");
+	system("cls");//clear the console
 	printf("enter the numerator of the first number : ");
 	scanf("%d", &result.numerator);
 	printf("enter the denumerator of the first number : ");
