@@ -94,7 +94,7 @@ start:
 				}else{
 					if(result.numerator > result.denumerator){
 					int i;
-					for(i = result.numerator-1; i >= result.denumerator; i--){
+					for(i = result.denumerator; i > 1; i--){
 						if(result.numerator % i == 0 && result.denumerator % i == 0){
 							result.numerator = result.numerator / i;
 							result.denumerator = result.denumerator / i;
@@ -103,7 +103,7 @@ start:
 					}
 				}else{
 					int i;
-					for(i = result.denumerator-1; i >= result.numerator; i--){
+					for(i = result.numerator-1; i > 1; i--){
 						if(result.numerator % i == 0 && result.denumerator % i == 0){
 							result.numerator = result.numerator / i;
 							result.denumerator = result.denumerator / i;
